@@ -4,7 +4,7 @@ import os
 # Add src directory to PYTHONPATH
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
 
-from src import create_app, db
+from __init__ import create_app, db
 
 app = create_app()
 
