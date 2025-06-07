@@ -1,0 +1,12 @@
+Flask
+gunicorn
+psycopg2-binary
+Flask-SQLAlchemy
+Flask-WTF
+Flask-Login
+python-dotenv
+Werkzeug
+Flask-Mail
+itsdangerous
+Flask-RESTful
+Flask-JWT-Extended
