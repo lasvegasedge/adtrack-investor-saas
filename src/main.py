@@ -5,7 +5,7 @@ app = create_app()
 
 @app.before_request
 def redirect_to_www():
-    # Redirect if the host is exactly the root domain
+
     if request.host == 'adtrackpitch.online':
         return redirect(f'https://www.adtrackpitch.online{request.full_path}', code=301)
 
