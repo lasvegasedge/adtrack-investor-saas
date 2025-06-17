@@ -1,1 +1,26 @@
-# File: src/templates/base.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}AdTrack Investor{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <header>
+        <h1>AdTrack Investor Portal</h1>
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/dashboard">Dashboard</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AdTrack</p>
+    </footer>
+</body>
+</html>
